@@ -387,7 +387,7 @@ sum = 0
 for i in a : 
 	sum = sum + i 
 
-print(sum/len(a))
+print(sum/len(a)) 
 
 
 
