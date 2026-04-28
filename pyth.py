@@ -109,7 +109,7 @@ while n > 0 :
     reverse = reverse * 10 + digit 
     n = n//10 
     print(f"the reverse {n} is {reverse}")
-    i+=1 '''
+    i+=1 
 n = int(input("enter a number n to reverse it well : "))
 
 reverse = 0 
@@ -118,6 +118,105 @@ for i in range(len(str(n))):
     reverse = reverse * 10 + digit 
     n = n//10
     print(f"the reverse of {n} is {reverse}")
+
+
+#Q10 : Print the Pallindrome number . 
+
+n = int(input("Enter a number to check if it is a palindrome: "))
+original = n
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+
+if original == reverse:
+    print(f"The number {original} is a palindrome")
+else:
+    print(f"The number {original} is not a palindrome")
+
+# Q11 : Print Sum of digits of a number n using loops . 
+
+n = int(input("enter a number n to find the sum of its digits : "))
+sum = 0 
+while n > 0 : 
+    digit = n % 10 
+    sum += digit 
+    n = n // 10 
+    print(f"the sum of the digits is {sum}")
+
+
+n = int(input("enter a number n to find the sum of its digits : "))
+sum = 0 
+for i in range(len(str(n))):
+    digit = n % 10 
+    sum += digit 
+    n = n // 10 
+    print(f"the sum of the digits is {sum}")
+
+# Q12 : Count the number of digits in a number.
+
+n = int(input("enter the number "))
+
+count = 0 
+while n > 0 :
+    n = n // 10 
+    count +=1 
+    print(f'the count of digits in the number is {count}')'''
+
+# Q13 : Print the Fibonacci series up to n terms using loops .
+
+n = int(input("enter the number of terms n to print the Fibonacci series :"))
+a = 0 
+b = 1 
+
+for i in range(n):
+    print(a, end=" ")
+    c = a + b 
+    a = b 
+    b = c 
+
+# Q14 : Print the Pattern of Stars using loops .
+n = int(input("enter the number of rows n to print the pattern of stars :"))
+while n > 0 : 
+    print("*" * n)
+    n -=1
+
+n = int(input("enter the number of rows n to print the pattern of stars :"))
+
+for i in range(n , 0 , -1):
+    print("*"*i)
+
+# Q15 : Print the Pattern of stars in aescending order using loops . 
+
+n = int(input("enter the number of rows n to print the pattern of stars in aescending order :"))
+i = 1 
+while i <= n : 
+    print("*" * i , end = "\n")
+    i+=1
+
+# Q16 : Print the Patttern of numbers in aescending order using loops . 
+
+n = int(input("Enter number of rows: "))
+
+i = 1
+while i <= n:
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
+    i += 1
+
+
+
+ 
+
+    
+
+
+
+
+
 
 
 
