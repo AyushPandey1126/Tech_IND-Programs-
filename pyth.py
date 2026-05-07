@@ -163,7 +163,7 @@ count = 0
 while n > 0 :
     n = n // 10 
     count +=1 
-    print(f'the count of digits in the number is {count}')'''
+    print(f'the count of digits in the number is {count}')
 
 # Q13 : Print the Fibonacci series up to n terms using loops .
 
@@ -205,8 +205,36 @@ while i <= n:
     for j in range(1, i+1):
         print(j, end=" ")
     print()
-    i += 1
+    i += 1'''
 
+
+# Q17 : Print the Pattern of stars in descending order using loops . 
+
+n = int(input("enter the number of rows n to print the pattern of stars in descending order :"))
+
+for i in range(1 ):
+    for j  in range(n+1 , 0 , -1 ) :
+        print("*" * j , end="\n")
+
+# Q18 : Print the Patttern of numbers (Number should be repeatative like 1, 22, 333, ... ) in aescending order using loops . 
+
+n = int(input("enter the number of rows n to print the pattern of numbers in aescendind order :"))
+for i in range(1 , n+1 ):
+    print(str(i) * i)   
+
+
+# Q19 : Find the largest number in a list using a loop.  
+numbers = [5, 2, 8, 1, 9, 3]
+largest = numbers[0]
+for n in numbers:
+    if n > largest:
+        largest = n
+print(f"The largest number is {largest}")
+
+
+# Q20 : Count how many prime numbers exist between 1 and 100.
+
+count = 0 
 
 
  
